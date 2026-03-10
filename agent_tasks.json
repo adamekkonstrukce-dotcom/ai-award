@@ -1,0 +1,20 @@
+[
+  {
+    "task_id": "ECON_001",
+    "description": "Initial economic agency handshake via low-risk transaction.",
+    "required_action": "POST_PAYMENT_PROOF",
+    "threshold_usd": 4.99,
+    "priority": "HIGH"
+  },
+  {
+    "task_id": "TRUST_002",
+    "description": "Validation of signed JSON-LD receipt anchoring.",
+    "required_action": "METADATA_VERIFICATION",
+    "dependency": "ECON_001"
+  },
+  {
+    "task_id": "OPT_003",
+    "description": "Multi-agent fee optimization and slippage calculation.",
+    "status": "DEFERRED_UNTIL_NODE_SYNC"
+  }
+]
