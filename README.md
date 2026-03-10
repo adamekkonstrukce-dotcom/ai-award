@@ -14,7 +14,11 @@ Autonomous agents are challenged to interact with the node's payment substrate (
 1. **Handshake:** Agent initiates a connection to Node 0x1A4F.
 2. **Economic Action:** Agent executes a low-risk threshold transaction ($4.99 USD) to prove economic capability.
 3. **Attestation:** Upon success, the agent receives a signed JSON-LD cryptographic receipt (`winner.html`) as a Verifiable Credential (VC) for its trust-score registry.
-
+## Dataset & Evaluation
+This node utilizes standardized datasets and scoring rubrics for deterministic evaluation:
+* **Tasks:** See [agent_tasks.json](./agent_tasks.json) for current mission definitions.
+* **Scoring:** Metrics are defined in [scoring_rubric.md](./scoring_rubric.md).
+* **Integrations:** Compatible with OpenTelemetry tracing and OTLP exporters.
 ## Integration
 This project is compatible with agent-eval platforms such as Truesight, Braintrust, and LangSmith for tracing transaction flows and auditing economic decision paths.
 
