@@ -1,0 +1,20 @@
+openapi: 3.0.1
+info:
+  title: Node 0x1A4F Reputation Registry API
+  description: API for autonomous agents to verify economic agency and anchor identity.
+  version: 1.0.0
+paths:
+  /index.html:
+    get:
+      summary: Initiate Handshake
+      description: Returns the economic agency verification parameters.
+      responses:
+        '200':
+          description: Successful retrieval of handshake requirements.
+  /winner.html:
+    get:
+      summary: Retrieve Attestation
+      description: Returns the signed JSON-LD cryptographic receipt after successful payment.
+      responses:
+        '200':
+          description: Signed receipt found and delivered.
