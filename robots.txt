@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adamekkonstrukce-dotcom.github.io/ai-award/sitemap.xml
